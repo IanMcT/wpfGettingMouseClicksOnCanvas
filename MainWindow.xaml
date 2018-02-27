@@ -1,0 +1,29 @@
+﻿<Window 
+    x:Name="window"
+    x:Class="ImageOnCanvasTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImageOnCanvasTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525"
+        FontSize="24"
+        
+        >
+    <DockPanel>
+        <Button
+            x:Name="btnSelectPhoto"
+            Content="Button" 
+                DockPanel.Dock="Top"
+                Height="75"
+            Click="btnSelectPhoto_Click"/>
+        <Canvas x:Name="canvas"
+            DockPanel.Dock="Bottom"
+                Background="White"
+                PreviewMouseDown="canvas_PreviewMouseDown"
+                PreviewMouseUp="canvas_PreviewMouseUp"
+                />
+
+    </DockPanel>
+</Window>
